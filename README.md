@@ -39,11 +39,48 @@ Connect the strip control pin to the pin described as SPIx_MOSI in the pinout vi
 
 
 # 💽 Installation
-Lorem ipsum
+To install simply choose version for your CPU and insert the library among your other program files.
 
 
-# 🖥️ Usage
-Lorem ipsum
+# 🖥️ Basic Usage
+
+### Making Object
+To use this library, create an object of the class **strip** from the **swietlib** namespace:
+```cpp
+swietlib::strip ledstrip(&hspi2, 120);
+```
+Replace `&hspi2` with a reference to the SPI handler you have chosen.
+**(Remember to include `spi.h`)**
+
+### Changing LED Color
+Set LEDs color with this:
+```cpp
+ledstrip.setPixel(10, ledstrip.rgbColor(255, 128, 0));
+```
+or
+```cpp
+ledstrip.setPixel(10, 255, 128, 0);
+```
+First argument means which LED in turn to change color, 
+
+### Filling, Clearing
+To clear the strip use:
+```cpp
+ledstrip.clear();
+```
+
+And to fill all the strip use:
+```cpp
+ledstrip.fill(255, 128, 0);
+```
+
+
+### Refreshing
+To refresh strip (send data to strip) you need to use:
+```cpp
+ledstrip.refresh();
+```
+
 
 
 # 💡 Examples
