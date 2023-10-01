@@ -14,7 +14,7 @@ Currently, the library is available and tested for STM32F4 microcontrollers, but
 The library has been tested with WS2815 and WS2812 LEDs. It is highly likely to also work with WS2813 and WS2812B, or similar variants. It might not work with WS2811 LEDs.
 
 ### Performance
-In testing, the WS28XX LED Control Library for STM32F4 demonstrated a refresh rate of approximately **19.5 LEDs per millisecond**.
+In testing, the library demonstrated a refresh rate of approximately **19.5 LEDs per millisecond**.
 
 
 
