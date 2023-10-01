@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>SwietLib</h1>
-  <p>STM32 library for WS28xx LED control.</p>
+  <img src="https://raw.githubusercontent.com/BlenderZegarek/swietlib/main/title.png" alt="Logo" width="100%">
+  <b>STM32 library for WS28xx LED control.</b>
 </div>
 
 
