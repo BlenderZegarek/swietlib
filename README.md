@@ -74,14 +74,13 @@ And to fill all the strip use:
 ledstrip.fill(255, 128, 0);
 ```
 
-
 ### Refreshing
 To refresh strip (send data to strip) you need to use:
 ```cpp
 ledstrip.refresh();
 ```
 
-
+**More info you can find [there](https://github.com/BlenderZegarek/swietlib/blob/main/USAGE.md).**
 
 # 💡 Examples
 Lorem ipsum
