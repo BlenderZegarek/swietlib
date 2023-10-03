@@ -8,10 +8,10 @@
 # 👋 Introduction
 
 ### Compatibility with Boards
-Currently, the library is available and tested for STM32F4 microcontrollers, but it may also be compatible with other STM32 microcontrollers.
+Currently, the library is available and tested for **STM32F4** microcontrollers, but it may also be compatible with other STM32 microcontrollers.
 
 ### Compatibility with LEDs
-The library has been tested with WS2815 and WS2812 LEDs. It is highly likely to also work with WS2813 and WS2812B, or similar variants. It might not work with WS2811 LEDs.
+The library has been tested with **WS2815** and **WS2812** LEDs. It is highly likely to also work with **WS2813** and **WS2812B**, or similar variants. It might not work with **WS2811** LEDs.
 
 ### Performance
 In testing, the library demonstrated a refresh rate of approximately **19.5 LEDs per millisecond**.
@@ -21,7 +21,7 @@ In testing, the library demonstrated a refresh rate of approximately **19.5 LEDs
 # ⚙️ Required Settings
 
 ### Clock Configuration
-You need to change clock speed for HCLK to 51.2MHz,
+You need to change clock speed for **HCLK to 51.2MHz**,
 [like here](https://raw.githubusercontent.com/BlenderZegarek/swietlib/main/clock_configuration.png).
 
 ### SPI Settings
@@ -34,12 +34,13 @@ These are tested settings, I encourage you to experiment with them.
 
 
 # 🔌 Connection
-Connect the strip control pin to the pin described as SPIx_MOSI in the pinout view.
+Connect the strip control pin to the pin described as **SPIx_MOSI** in the pinout view.
 
 
 
 # 💽 Installation
 To install simply choose version for your CPU and insert the library among your other program files.
+**Also install the files from the `color` folder.**
 
 
 # 🖥️ Basic Usage
@@ -55,7 +56,7 @@ Replace `&hspi2` with a reference to the SPI handler you have chosen.
 ### Changing LED Color
 Set LEDs color with this:
 ```cpp
-ledstrip.setPixel(10, ledstrip.rgbColor(255, 128, 0));
+ledstrip.setPixel(10, swietlib::rgbColor(255, 128, 0));
 ```
 or
 ```cpp
