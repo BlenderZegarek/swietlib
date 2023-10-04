@@ -84,4 +84,33 @@ ledstrip.refresh();
 **More info you can find [there](https://github.com/BlenderZegarek/swietlib/blob/main/USAGE.md).**
 
 # 💡 Examples
-Lorem ipsum
+
+### Rainbow
+Simple moving rainbow effect using this library.
+```cpp
+#include <cstdint>
+#include "swietlib.hpp"
+#include "swietlibColor.hpp"
+#include "stm32f4xx.h"
+
+#define LED_COUNT 120
+
+...
+
+swietlib::strip ledstrip(&hspi2, LED_COUNT);
+
+// Change it to modify the density of the rainbow                             ↓↓↓
+for (uint16_t hue = 0, i = 0; i <= LED_COUNT; i++, hue += (65535 / (LEDCOUNT / 2))) {
+    ledstrip.setPixel(i, swietlib::hsvColor(hue, 255, 255).toRGB());
+}
+
+ledstrip.setBrightness(64);
+
+uint16_t offset = 1;
+while (1) {
+    ledstrip.refreshOffset(offset);
+    HAL_Delay(20);
+    if (offset >= LED_COUNT) offset = 0;
+    offset++;
+}
+```
