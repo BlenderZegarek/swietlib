@@ -30,7 +30,7 @@ namespace swietlib {
 
 		for (uint16_t i = this->ledCount, j = 0; i > 0; i--) {
 
-			idx = ((i + offset) % this->ledCount);
+			idx = ((i + offset) % (this->ledCount + 1));
 
 			r = this->colorsArray[idx].red * this->brightness / 256;
 			g = this->colorsArray[idx].green * this->brightness / 256;
@@ -75,7 +75,7 @@ namespace swietlib {
 	}
 
 	void strip::fill(rgbColor color, uint16_t start, uint16_t end) {
-		for(uint16_t i = start; i<=end; i++)
+		for(uint16_t i = start; i <= end; i++)
 			this->setPixel(i, color);
 	}
 
