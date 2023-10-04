@@ -92,6 +92,7 @@ Simple moving rainbow effect using this library.
 #include "swietlib.hpp"
 #include "swietlibColor.hpp"
 #include "stm32f4xx.h"
+#include "spi.h"
 
 #define LED_COUNT 120
 
