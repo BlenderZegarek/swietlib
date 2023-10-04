@@ -99,7 +99,7 @@ Simple moving rainbow effect using this library.
 
 swietlib::strip ledstrip(&hspi2, LED_COUNT);
 
-// Change it to modify the density of the rainbow                             ↓↓↓
+// Change it to modify the density of the rainbow                              ↓↓↓
 for (uint16_t hue = 0, i = 0; i <= LED_COUNT; i++, hue += (65535 / (LED_COUNT / 2))) {
     ledstrip.setPixel(i, swietlib::hsvColor(hue, 255, 255).toRGB());
 }
