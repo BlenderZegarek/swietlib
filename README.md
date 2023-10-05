@@ -1,12 +1,27 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/BlenderZegarek/swietlib/main/title.png" alt="Logo" width="100%">
   <b>STM32 library for WS28xx LED control.</b>
+
+  ------
+  
+  ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/blenderzegarek/swietlib/main)
+  ![STM32](https://img.shields.io/badge/STM32-blue)
+  ![GitHub top language](https://img.shields.io/github/languages/top/blenderzegarek/swietlib)
+  ![GitHub Repo stars](https://img.shields.io/github/stars/blenderzegarek/swietlib)
+  ![WS281x](https://img.shields.io/badge/WS281x-purple)
+
 </div>
 
 
 
 # 👋 Introduction
 
+### Features
+- **WS281x** led control
+- **HSV to RGB** and **RGB to HSV**
+- **Filling** and **Clearing**
+- **Brightness** control
+  
 ### Compatibility with Boards
 Currently, the library is available and tested for **STM32F4** microcontrollers, but it may also be compatible with other STM32 microcontrollers.
 
@@ -29,8 +44,11 @@ First, enable SPI you want and set settings to:
 
 These are tested settings, I encourage you to experiment with them.
 
+<details><summary><b>SPI Settings Screenshot</b></summary>
+  
 ![SPI Settings](https://raw.githubusercontent.com/BlenderZegarek/swietlib/main/spi_settings.png)
 
+</details>
 
 
 # 🔌 Connection
