@@ -93,7 +93,7 @@ To clear the strip use:
 ledstrip.clear();
 ```
 
-And to fill all the strip use:
+To fill all the strip use:
 ```cpp
 ledstrip.fill(255, 128, 0);
 ```
