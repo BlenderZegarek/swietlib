@@ -23,7 +23,7 @@
 - **Brightness** control
   
 ### Compatibility with Boards
-Currently, the library is available and tested for **STM32F4** microcontrollers, but it may also be compatible with other STM32 microcontrollers.
+Currently, the library is tested on **STM32F4** and **STM32H7** microcontrollers, but there's a good chance it will be compatible with other STM32 microcontrollers.
 
 ### Compatibility with LEDs
 The library has been tested with **WS2815** and **WS2812** LEDs. It is highly likely to also work with **WS2813** and **WS2812B**, or similar variants. It might not work with **WS2811** LEDs.
@@ -138,3 +138,4 @@ while (1) {
     offset++;
 }
 ```
+
