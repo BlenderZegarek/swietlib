@@ -1,7 +1,11 @@
-# Usage
-This file contains descriptions of functions available in the SwietLib library. Each function is described in terms of its functionality, input parameters, return values, and includes an example usage.
+<div align="center">
+  <h1>Usage</h1>
+  <p>This file contains descriptions of functions available in the SwietLib library. Each function is described in terms of its functionality, input parameters, return values, and includes an example usage.</p>
+</div>
 
-## strip class
+<br>
+
+# `strip` class
 ### `strip(SPI_HandleTypeDef *spiHandler, uint16_t ledCount);` (constructor)
 This is constructor for strip object. It's taking the SPI handler reference (`SPI_HandleTypeDef`) and the number of LEDs (`uint16_t`) as arguments. Initializes the object and allocates memory.
 
@@ -56,6 +60,11 @@ Gets the private brightness variable.
 Gets the count of leds set in constructor.
 
 ------
+------
 
-### `rgbColor_t  object.rgbColor(uint8_t r, uint8_t g, uint8_t b);`
-Changes the provided values to the `rgbColor_t` type.
+# Colors
+## struct rgbColor
+Lorem ipsum
+
+## struct hsvColor
+Lorem ipsum
