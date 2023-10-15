@@ -36,8 +36,7 @@ In testing, the library demonstrated a refresh rate of approximately **19.5 LEDs
 # ⚙️ Required Settings
 
 ### Clock Configuration
-You need to change clock speed for **HCLK to 51.2MHz**.
-<details><summary><b>Clock config screenshot</b></summary>
+<details><summary><b>Example clock config screenshot</b></summary>
 
 ![Clock config screenshot](https://raw.githubusercontent.com/BlenderZegarek/swietlib/main/clock_configuration.png)
 (click to zoom)
@@ -45,9 +44,11 @@ You need to change clock speed for **HCLK to 51.2MHz**.
 </details>
 
 ### SPI Settings
-First, enable SPI you want and set settings to:
+Enable SPI you want and set settings to:
 
 These are tested settings, I encourage you to experiment with them.
+
+The **Baud Rate** is the important setting for Clock.
 
 <details><summary><b>SPI Settings Screenshot</b></summary>
   
